@@ -17,11 +17,11 @@ def is_package_bulky(width, height, length):
         height = float(height)
     if type(length) is int:
         length = float(length)
-    
+
     # Type Validation
     if type(width) is not float or type(height) is not float or type(length) is not float:
         raise Exception("Width, Height, and Length must be numbers.") 
-    
+
     # Width, Height, Length Validation
     if width <= 0 or height <= 0 or length <= 0:
         raise Exception("Width, Height, and Length cannot be less than or equal to 0.") 
@@ -41,7 +41,7 @@ def is_package_bulky(width, height, length):
     print(f"Package is NOT bulky\n")
     return False
 
-# Constant defined to determine the mass at which a package is considered heavy
+# Constants defined to determine the mass at which a package is considered heavy
 HEAVY_PACKAGE_MASS = 20 # 20 kg
 PACKAGE_MASS_UNITS = "kg"
 
