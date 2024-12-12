@@ -47,7 +47,7 @@ PACKAGE_MASS_UNITS = "kg"
 
 # The is_package_heavy function takes in the mass of a package and determines whether or not it classifies as a heavy package based on the following criteria:
 # - A package is **heavy** when its mass is greater or equal to 20 kg. (units are centimeters for the dimensions and kilogram for the mass)
-def is_package_heavy(mass: float):
+def is_package_heavy(mass):
     # Convert ints to floats
     if type(mass) is int:
         mass = float(mass)
