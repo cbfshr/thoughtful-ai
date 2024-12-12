@@ -70,8 +70,7 @@ def is_package_heavy(mass: float):
     print(f"Package is NOT heavy\n")
     return False
 
-
-# Constants for definined the package status strings
+# Constants for defining the package status strings
 PACKAGE_STANDARD = "STANDARD"
 PACKAGE_SPECIAL = "SPECIAL"
 PACKAGE_REJECTED = "REJECTED"
